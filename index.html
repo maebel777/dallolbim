@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIM Collaboration & Compliance</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: #004aad;
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        nav .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        nav ul li a:hover {
+            color: #ffd700;
+        }
+
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1503387762-592deb58ef4e');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            margin-top: 60px;
+        }
+
+        .hero-content h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .cta-button {
+            background: #ffd700;
+            color: #004aad;
+            padding: 0.8rem 2rem;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        .cta-button:hover {
+            background: #e6c200;
+        }
+
+        section {
+            padding: 5rem 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .features {
+            background: #f9f9f9;
+        }
+
+        .features h2, .compliance h2, .contact h2 {
+            text-align: center;
+            margin-bottom: 3rem;
+            font-size: 2.5rem;
+            color: #004aad;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            text-align: center;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-card h3 {
+            margin-bottom: 1rem;
+            color: #004aad;
+        }
+
+        .compliance, .contact {
+            background: white;
+        }
+
+        .contact form {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .contact input, .contact textarea {
+            padding: 0.8rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .contact button {
+            background: #004aad;
+            color: white;
+            padding: 0.8rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .contact button:hover {
+            background: #003880;
+        }
+
+        footer {
+            background: #004aad;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+
+            .hero-content p {
+                font-size: 1rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DALLOL BIM</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <header>
+    <h1>DALLOL BIM</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#features">Features</a>
+      <a href="#compliance">Compliance</a>
+      <a href="#contact">Contact</a>
+      <a href="bim-collaboration.html">BIM</a>
+      <a href="project-management.html">Project Mgmt</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+  <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>BIM Collaboration & Compliance Solutions</h1>
+            <p>Streamline your Building Information Modeling processes with our cutting-edge tools and compliance expertise.</p>
+            <a href="login.html" class="cta-button">Get Started</a>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <h2>Our Features</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h3>Real-Time Collaboration</h3>
+                <p>Work seamlessly with your team on BIM projects, with live updates and version control.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Cloud Integration</h3>
+                <p>Access your projects from anywhere with secure cloud-based storage and management.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Compliance Tracking</h3>
+                <p>Ensure your projects meet industry standards with automated compliance checks.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Data Analytics</h3>
+                <p>Leverage insights from your BIM data to optimize project efficiency and outcomes.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="compliance" class="compliance">
+        <h2>Compliance Made Simple</h2>
+        <p>Our platform ensures your BIM projects adhere to international standards like ISO 19650, COBie, and local regulations. With automated audits and real-time reporting, stay compliant without the hassle.</p>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <div id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+            <button onclick="submitForm()">Send Message</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 BIM Solutions. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function submitForm() {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            if (name && email && message) {
+                alert('Thank you for your message! We will get back to you soon.');
+                document.getElementById('name').value = '';
+                document.getElementById('email').value = '';
+                document.getElementById('message').value = '';
+            } else {
+                alert('Please fill out all fields.');
+            }
+        }
+    </script>
+</body>
+</html>
